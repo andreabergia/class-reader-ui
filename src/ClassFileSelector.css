@@ -1,0 +1,9 @@
+.class-file-selector {
+  width: 100%;
+  border: 1px dashed var(--color-theme-2);
+  background-color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
