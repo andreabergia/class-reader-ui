@@ -1,27 +1,23 @@
-# React + TypeScript + Vite
+# class-reader-ui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple webapp that uses my Rust library class-reader, compiled as a wasm module, to load a Java `.class` file and display what it contains in the browser.
 
-Currently, two official plugins are available:
+Note: it does not yet have a pipeline build script or any automated deploy, because I am using a local version of my library at the moment!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech stack: [react](https://react.dev/), [typescript](https://www.typescriptlang.org/), [react-dropzone](https://react-dropzone.js.org/), [react-json-tree](https://www.npmjs.com/package/react-json-tree), some simple hand-written css, [vite](https://vitejs.dev/), [jest](https://jestjs.io/), [eslint](https://eslint.org/).
 
-## Expanding the ESLint configuration
+## Running and testing
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
 ```
+# starts local webserver
+npm run dev
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# runs test
+npm run test
+
+# runs eslint
+npm run lint
+
+# builds app
+npm run build
+```
