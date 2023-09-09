@@ -1,0 +1,68 @@
+:root {
+  --font-body: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-weight-normal: 400;
+  --color-bg: #f4f4f4;
+  --color-theme-1: #f89820;
+  --color-theme-2: #5382a1;
+  --color-text: rgba(0, 0, 0, 0.8);
+  --color-error: #ff3e00;
+  --color-error-darker: #c43202;
+  --color-class-border: #ccc;
+
+  font-family: var(--font-body);
+  color: var(--color-text);
+  font-weight: var(--font-weight-normal);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+h1,
+h2 {
+  color: var(--color-theme-2);
+  font-weight: var(--font-weight-normal);
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+
+  & code {
+    color: var(--color-theme-1);
+  }
+}
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} */
+/* button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
