@@ -3,17 +3,13 @@
 import { WasmClass } from "class-reader";
 import { JSONTree } from "react-json-tree";
 import "./ClassFileDisplay.css";
+import { isSimple } from "./util";
 
 interface ClassFileDisplayProps {
   classFile: WasmClass;
 }
 
 export function ClassFileDisplay({ classFile }: ClassFileDisplayProps) {
-  const isSimple = (data: any): boolean =>
-    typeof data !== "object" ||
-    Object.keys(data).length === 1 ||
-    (Array.isArray(data) && data.every((item) => isSimple(item)));
-
   const getItemString = (
     type: string,
     data: any,
