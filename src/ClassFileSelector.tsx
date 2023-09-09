@@ -21,7 +21,7 @@ export function ClassFileSelector({
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: { "application/java-vm": [".class"] },
+    // accept: { "application/java-vm": [".class"] },
     multiple: false,
   });
 
