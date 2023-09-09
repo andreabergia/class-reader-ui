@@ -12,7 +12,7 @@ export function ClassFileSelector({
   const onDrop = useCallback(
     (acceptedFiles: File[]) => {
       console.debug("dropped files", acceptedFiles);
-      if (acceptedFiles && acceptedFiles.length > 0) {
+      if (acceptedFiles.length > 0) {
         onClassFileSelected(acceptedFiles[0]);
       }
     },

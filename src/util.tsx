@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-const isSimpleObject = (data: any): boolean => {
+const isSimpleObject = (data: Record<string, any>): boolean => {
   const keys = Object.keys(data);
   return (
     keys.length <= 1 ||
@@ -15,5 +15,5 @@ const isSimpleArray = (data: any[]): boolean =>
 export const isSimple = (data: any): boolean =>
   !data ||
   typeof data !== "object" ||
-  (!Array.isArray(data) && isSimpleObject(data)) ||
+  (!Array.isArray(data) && isSimpleObject(data as object)) ||
   (Array.isArray(data) && isSimpleArray(data));

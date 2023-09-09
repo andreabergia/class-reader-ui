@@ -6,8 +6,8 @@ import { useState } from "react";
 import { ClassFileDisplay } from "./ClassFileDisplay";
 
 export function App() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [error, setError] = useState<any | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment
+  const [error, setError] = useState<any>(null);
   const [classFile, setClassFile] = useState<WasmClass | null>(null);
 
   function onClassFileSelected(classFile: File) {
