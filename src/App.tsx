@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { ClassFileSelector } from "./ClassFileSelector";
 import { wasm_read_buffer, WasmClass } from "class-reader";
 import { useState } from "react";
+import { ClassFileDisplay } from "./ClassFileDisplay";
 
 export function App() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -36,7 +37,7 @@ export function App() {
       <main>
         <ClassFileSelector onClassFileSelected={onClassFileSelected} />
         {error && <div className="error">{JSON.stringify(error)}</div>}
-        {classFile && <pre>{JSON.stringify(classFile, null, 2)}</pre>}
+        {classFile && <ClassFileDisplay classFile={classFile} />}
       </main>
     </>
   );

@@ -13,7 +13,8 @@
     "class-reader": "file:../class-reader/pkg",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-dropzone": "^14.2.3"
+    "react-dropzone": "^14.2.3",
+    "react-json-tree": "^0.18.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

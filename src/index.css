@@ -1,5 +1,6 @@
 :root {
   --font-body: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-monospace: Roboto Mono, monospace;
   --font-weight-normal: 400;
   --color-bg: #f4f4f4;
   --color-theme-1: #f89820;

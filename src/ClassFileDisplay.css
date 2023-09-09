@@ -1,0 +1,7 @@
+.class-file-display {
+  font-family: var(--font-family-monospace);
+
+  & > * {
+    padding: 1rem !important;
+  }
+}
