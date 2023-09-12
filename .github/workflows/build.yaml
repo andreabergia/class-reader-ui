@@ -26,22 +26,24 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+      - name: Save distribution for GitHub pages
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: dist-for-github-pages
-          path: |
-            dist
+          path: dist
 
   deploy:
     needs: build
+
     permissions:
       pages: write
       id-token: write
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
