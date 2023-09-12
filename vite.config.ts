@@ -5,5 +5,6 @@ import topLevelAwait from "vite-plugin-top-level-await";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "class-reader-ui",
   plugins: [react(), wasm(), topLevelAwait()],
 });
