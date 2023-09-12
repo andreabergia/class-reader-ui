@@ -11,7 +11,7 @@
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
-    "class-reader": "file:../class-reader/pkg",
+    "@andreabergia/class-reader": "^0.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { WasmClass } from "class-reader";
+import { WasmClass } from "@andreabergia/class-reader";
 import { JSONTree } from "react-json-tree";
 import "./ClassFileDisplay.css";
 import { isSimple } from "./util";

@@ -1,7 +1,7 @@
 import "./App.css";
 import { Header } from "./Header";
 import { ClassFileSelector } from "./ClassFileSelector";
-import { wasm_read_buffer, WasmClass } from "class-reader";
+import { wasm_read_buffer, WasmClass } from "@andreabergia/class-reader";
 import { useState } from "react";
 import { ClassFileDisplay } from "./ClassFileDisplay";
 
