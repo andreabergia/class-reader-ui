@@ -3,5 +3,6 @@
 
   & > * {
     padding: 1rem !important;
+    margin: 0 !important;
   }
 }
