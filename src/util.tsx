@@ -9,8 +9,7 @@ const isSimpleObject = (data: Record<string, any>): boolean => {
 };
 
 const isSimpleArray = (data: any[]): boolean =>
-  data.length <= 1 ||
-  (data.length <= 2 && data.every((item) => isSimple(item)));
+  data.length <= 3 && data.every((item) => isSimple(item));
 
 export const isSimple = (data: any): boolean =>
   !data ||

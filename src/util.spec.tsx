@@ -46,20 +46,16 @@ describe("isSimple", () => {
       expect(isSimple([])).toBe(true);
     });
 
-    it("should be true for an array with one element", () => {
-      expect(isSimple([true])).toBe(true);
+    it("should be true if the array has three elements but all are simple", () => {
+      expect(isSimple([1, 2, 3])).toBe(true);
     });
 
-    it("should be true if the array has two elements but both are simple", () => {
-      expect(isSimple([true, false])).toBe(true);
+    it("should be false if the array has three elements but one is not simple", () => {
+      expect(isSimple([1, 2, { b1: false, b2: false, b3: false }])).toBe(false);
     });
 
-    it("should be false if the array has two elements but one is not simple", () => {
-      expect(isSimple([true, { b1: false, b2: false, b3: false }])).toBe(false);
-    });
-
-    it("should be false if the array has three elements", () => {
-      expect(isSimple([1, 2, 3])).toBe(false);
+    it("should be false if the array has four elements", () => {
+      expect(isSimple([1, 2, 3, 4])).toBe(false);
     });
   });
 });
