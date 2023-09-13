@@ -1,9 +1,9 @@
 .class-file-selector {
   border: 1px dashed var(--color-theme-2);
   background-color: white;
-  padding: 1em;
+  padding: calc(2 * var(--spacing-base));
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: calc(2 * var(--spacing-base));
 }

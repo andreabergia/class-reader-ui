@@ -2,7 +2,7 @@
   font-family: var(--font-family-monospace);
 
   & > * {
-    padding: 1rem !important;
+    padding: calc(2 * var(--spacing-base)) !important;
     margin: 0 !important;
   }
 }

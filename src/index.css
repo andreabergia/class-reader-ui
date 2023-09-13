@@ -8,7 +8,7 @@
   --color-text: rgba(0, 0, 0, 0.8);
   --color-error: #c43202;
   --color-error-darker: #ac2b00;
-  --padding-base: 0.5rem;
+  --spacing-base: 0.5rem;
 
   font-family: var(--font-body);
   color: var(--color-text);

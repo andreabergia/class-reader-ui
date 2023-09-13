@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 calc(2 * var(--spacing-base));
 
   & .github-link {
-    padding: 0.5rem 0;
+    padding: var(--spacing-base) 0;
 
     & img {
       width: 2rem;

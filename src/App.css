@@ -1,5 +1,5 @@
 main {
-  padding: 1em;
+  padding: calc(2 * var(--spacing-base));
   display: flex;
   flex-direction: column;
 }
